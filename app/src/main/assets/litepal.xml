@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="gym" >
+    </dbname>
+    <version value="9" >
+    </version>
+    <list>
+        <!--这里是类映射-->
+        <mapping class="com.example.dell.myapplication.javaBean.information"></mapping>
+        <mapping class="com.example.dell.myapplication.javaBean.game"></mapping>
+        <mapping class="com.example.dell.myapplication.javaBean.notice1"></mapping>
+    </list>
+</litepal>
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+>
+    <EditText
+        android:id="@+id/et_enter_user"
+        android:layout_marginTop="180dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="用户名/电话/邮箱"
+        android:gravity="left"
+        android:background="@drawable/shap_user"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/et_enter_psw"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:gravity="left"
+        android:background="@drawable/shap_user"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_enter_enter"
+        android:layout_marginTop="30dp"
+        style="@style/DefaultBtnWStyle"
+        android:gravity="center"
+        android:layout_width="280dp"
+        android:layout_gravity="center"
+        android:text="登录"
+        android:textSize="20sp"
+        android:background="@drawable/shap_enter"
+        />
+
+    <Button
+        android:id="@+id/btn_enter_login"
+        android:layout_marginTop="10dp"
+        style="@style/DefaultBtnWStyle"
+        android:layout_width="280dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shap_enter"
+        android:gravity="center"
+        android:text="注册"
+        android:textSize="20sp" />
+
+</LinearLayout>

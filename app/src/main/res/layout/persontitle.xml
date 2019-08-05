@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:gravity="center"
+
+    android:background="#3299cc"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_person_tu"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/c2"
+        android:paddingTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_person_tu"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:text="汪汪汪~~~" />
+
+
+</RelativeLayout>

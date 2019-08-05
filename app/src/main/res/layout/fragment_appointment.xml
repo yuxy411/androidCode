@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--定位当前位置的体育场馆-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:id="@+id/current_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/current_position_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="定位中..."/>
+            <Button
+                android:id="@+id/select_other_locations"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/current_position_name"
+                android:textSize="10sp"
+                android:text="选择其他"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--球类选择-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/select_basketball"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/icon_basketball" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="只显示篮球场"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/select_football"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/icon_football" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="只显示足球场"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/select_badminton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/icon_badminton" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="只显示羽毛球场"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/select_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="选择全部类型场地"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--当前学校地图-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container_map_content"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/sdu_map">
+
+        <Button
+            android:id="@+id/basketballground"
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:background="@drawable/basketball_ground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.751"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/footballground"
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:background="@drawable/football_ground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/badmintonground"
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:background="@drawable/badminton_ground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            android:visibility="visible"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/showAllAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看场地预约情况" />
+</LinearLayout>

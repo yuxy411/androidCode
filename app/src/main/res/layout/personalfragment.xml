@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--上面的标题栏<include layout="@layout/persontitle"/>-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:background="@drawable/top_person"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_person_tu"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/c2"
+            android:paddingTop="5dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_person_word"
+            android:layout_below="@+id/iv_person_tu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="汪汪汪~~~"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+    <!--下面的list view标签-->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_person_list"
+        xmlns:android="http://schemas.android.com/apk/res/android"></ListView>
+
+</LinearLayout>

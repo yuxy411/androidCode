@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.myapplication.MainActivity">
+    <!--标题栏 <include layout="@layout/titlebar"/>-->
+
+    <Button
+        android:id="@+id/btn_comm_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/c2" />
+
+    <Button
+        android:id="@+id/btn_comm_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_comm_center"
+        android:layout_alignStart="@+id/btn_comm_center"
+        android:layout_below="@+id/btn_comm_center"
+        android:background="@drawable/down"
+        android:onClick="Race"
+        />
+
+    <Button
+        android:id="@+id/btn_comm_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_comm_right"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/left"
+        android:onClick="Forum"
+        />
+
+    <Button
+        android:id="@+id/btn_comm_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_comm_right"
+        android:layout_alignEnd="@+id/btn_comm_center"
+        android:layout_alignStart="@+id/btn_comm_center"
+        android:background="@drawable/top"
+        android:onClick="Equipment"
+        />
+
+    <Button
+        android:id="@+id/btn_comm_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_comm_center"
+        android:layout_alignTop="@+id/btn_comm_center"
+        android:layout_toEndOf="@+id/btn_comm_top"
+        android:background="@drawable/right"
+        android:onClick="Notice"
+        />
+
+
+</RelativeLayout>

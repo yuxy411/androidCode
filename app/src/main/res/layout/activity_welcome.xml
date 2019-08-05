@@ -1,0 +1,29 @@
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="@drawable/loading"
+    >
+
+
+            <ProgressBar
+                android:id="@+id/pb_welcome_loading"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_welcome_welcome"
+                android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_welcome_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="欢迎来到智能体育馆..." 
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

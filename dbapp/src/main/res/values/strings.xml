@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">巫师运动</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="forget_password">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="wx_login">微信登录</string>
+    <string name="input_phone_please">请输入手机号码</string>
+    <string name="input_password_please">请输入登录密码</string>
+    <string name="password_error">密码输入有误</string>
+    <string name="password_error_consistent">二次密码输入不一致</string>
+    <string name="account_error">手机号输入有误</string>
+    <string name="desc_phone">手机号</string>
+    <string name="desc_password">密码&#160;&#160;&#160;&#160;</string>
+    <string name="desc_code">验证码</string>
+    <string name="hint_phone">请填写中国大陆手机号</string>
+    <string name="hint_password">6位以上字母数字符号</string>
+    <string name="password_old">原密码</string>
+    <string name="password_new">新密码</string>
+    <string name="password_sure">再次确认</string>
+    <string name="submit">提交</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="isauto_on">☑自动续订</string>
+    <string name="isauto_off">⎕自动续订</string>
+</resources>

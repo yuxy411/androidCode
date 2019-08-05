@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="山东大学" />
+    <item android:title="中国海洋大学" />
+    <item android:title="中国石油大学" />
+    <item android:title="..." />
+</menu>
